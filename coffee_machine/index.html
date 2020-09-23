@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/750282b7c8.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Кофемашина</title>
+  </head>
+  <body>
+    <div id="blocker"></div>
+    <div class="container my-5 rounded">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row coffe-btn-group mt-5 mb-3 mx-2">
+            <div class="rounded-circle coffee-btn mr-3" onclick="getCoffee('Латте',42)"></div><span>Латте - 42</span>
+          </div>
+          <div class="row coffe-btn-group my-3 mx-2">
+            <div class="rounded-circle coffee-btn mr-3" onclick="getCoffee('Американо',47)"></div><span>Американо - 47</span>
+          </div>
+          <div class="row coffe-btn-group my-3 mx-2">
+            <div class="rounded-circle coffee-btn mr-3" onclick="getCoffee('Эспрессо',61)"></div><span>Эспрессо - 61</span>
+          </div>
+          <div class="row coffe-btn-group my-3 mx-2">
+            <div class="rounded-circle coffee-btn mr-3" onclick="getCoffee('Капучино',58)"></div><span>Капучино - 58</span>
+          </div>
+          <div class="row coffe-btn-group mt-3 mb-5 mx-2">
+            <div class="rounded-circle coffee-btn mr-3" onclick="getCoffee('Лунго',44)"></div><span>Лунго - 44</span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row my-5">
+            <div class="col-sm-6">
+              <div id="display" class="p-3 text-center">
+                <p id="displayInfo">Внесите деньги и закажите напиток</p>
+                <p id="balance">Ваш баланс: 0 руб.</p>
+                <div class="progress" style="background:navy;">
+                  <div class="progress-bar bg-white" role="progressbar" style="width: 0%"></div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-warning my-3" onclick="getChange(money.value)">Выдать сдачу</button>
+              <div style="position:relative;">
+                <img src="images/mug_without_coffee.png" style="position:absolute; " width="90%" alt="">
+                <img src="images/mug_coffee.png" width="90%" style="position:absolute; opacity:0;" id="coffe_mug" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <input type="hidden" id="money">
+              <img src="images/bill_acc.png" alt="" id="bill_acc">
+              <div id="change_box" class="mx-auto my-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <img class="note50" src="images/50rub.jpg" alt="50 рублей" data-denomination="50">
+    <img class="note100" src="images/100rub.jpg" alt="100 рублей" data-denomination="100">
+    <img class="note500" src="images/500rub.jpg" alt="500 рублей" data-denomination="500">
+    
+    <script src="js/script.js"></script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

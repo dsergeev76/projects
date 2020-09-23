@@ -1,0 +1,114 @@
+@font-face{
+font-family: "lcd_nova";
+src: url("../fonts/a_lcdnova.ttf");
+font-style: normal; 
+font-weight: normal;
+}
+  
+@font-face{
+font-family: "dexterc";
+src: url("../fonts/dexterc.ttf");
+font-style: normal; 
+font-weight: normal;
+}
+
+body{
+  background: url(../images/background-coffee-beans-and-cups.jpg);
+}
+.container{
+  background: rgb(139, 69, 19, .5);
+}
+.coffe-btn-group{
+  width:90%;
+  height:60px;
+  background:#BC8F8F;
+  border-radius: 30px 0 0 30px;
+  font-family: "dexterc";
+  font-size:2em;
+  font-weight:600;
+  color:white;
+}
+
+.coffee-btn{
+  width:60px;
+  height:60px;
+  background:Brown;
+  cursor:pointer;
+  border:2px solid #AF5A5A;
+  box-shadow: 1px 1px 5px black;
+}
+.coffee-btn:hover{
+  background:#800000;
+}
+.coffee-btn:active{
+  background:red;
+  box-shadow: inset 0 0 10px black;
+}
+
+#display{
+  width:100%;
+  height:190px;
+  background:navy;
+  color:white;
+  border: 5px groove DarkSlateGrey;
+  font-family: "lcd_nova";
+  font-size:1em;
+}
+
+#change_box{
+  position:relative;
+  width:95%;
+  height:180px;
+  border:4px solid #A52A2A	;
+  background:#DB7093;
+}
+
+img[src$='rub.png']{
+  width:60px;
+  cursor:pointer;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+img[src$='rub.png']:hover{
+  filter: contrast(150%);
+}
+
+img[src$='rub.jpg']:hover{
+  cursor:pointer;
+  filter: contrast(150%);
+}
+
+#coffe_mug:hover{
+  cursor:pointer;
+  filter: contrast(150%);
+}
+
+#blocker{
+  top:0;
+  position:absolute;
+  width:100%;
+  z-index:100;
+}
+
+.note50 {
+  position:absolute;
+  left:200px;
+  top:630px;
+  transform: rotate(-25deg);
+}
+
+.note100 {
+  position:absolute;
+  left:400px;
+  top:640px;
+  transform: rotate(-45deg);
+}
+
+.note500 {
+  position:absolute;
+  left:580px;
+  top:620px;
+  transform: rotate(30deg);
+}
